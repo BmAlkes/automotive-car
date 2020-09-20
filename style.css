@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,600;1,400&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background-color: #fff;
+}
+
+header {
+  background-image: url("car-bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: calc(100vh - 100px); 
+}
+.content{
+    margin: auto ;
+    font-size: 2rem;
+    max-width: 100%;
+}
+.content h1{
+    color: #00c2ff;
+    margin-bottom: 0;
+}
+
+.container {
+    margin: 0 auto;
+  width: 1000px;
+  max-width: 100%;
+  padding: 0 1rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+nav .logo {
+  font-size: 2.5rem;
+}
+nav ul {
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+}
+nav li{
+
+}
+
+nav li a{
+    color: white;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.highlight{
+    background-color:#00c2ff;
+    color: white;
+    text-decoration: none;
+}
+
+.selected{
+    font-weight: bold;
+}
+footer{
+  background-color: #000;
+  color: #fff;
+  padding: 2rem;
+}
+
+footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    list-style-type: none;
+}
+
+footer strong{
+    color: #00c2ff;
+}
+footer p{
+    margin: 0;
+}
+
+@media(max-width:700px){
+    .content{
+        margin: 2rem auto 0;
+        font-size: 1.4rem;
+    }
+    nav ul{
+        flex-direction: column;
+    }
+    nav li{
+       margin: 0.5rem;
+    }
+   nav .highlight{
+       display: none;
+   }
+   footer ul{
+       flex-direction: column;
+       justify-content: center;
+   }
+   footer li{
+       margin: 1rem;
+       text-align: center;
+   }
+}
